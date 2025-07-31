@@ -2,10 +2,10 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../pages/Home";
 import Menu from "../pages/Menu";
-import Sobre from "../pages/Sobre";
+import Info from "../pages/Info";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Entypo from '@expo/vector-icons/Entypo';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Feather from '@expo/vector-icons/Feather';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,7 +14,7 @@ export default function HomeNavigation() {
         <Tab.Navigator>
             <Tab.Screen name="Home" component={Home}  
                 options={{
-                    tabBarIcon: ({ color, size }) => ( 
+                    tabBarIcon: ({ color, size }) => (
                         <Entypo name="home" size={24} color="black" />
                     ),
                 }}
@@ -25,9 +25,9 @@ export default function HomeNavigation() {
                     ),
                 }}
             />
-            <Tab.Screen name="Sobre" component={Sobre}options={{
+            <Tab.Screen name="Info" component={Info} options={{
                     tabBarIcon: ({ color, size }) => ( 
-                        <FontAwesome6 name="person" size={24} color="black" />
+                        <Feather name="info" size={24} color="black" />
                     ),
                 }}
             />
