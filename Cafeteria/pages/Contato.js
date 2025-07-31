@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Image, Text, TouchableOpacity, SafeAreaView, ScrollView } from "react-native";
 
-export default function Info( { navigation } ) {
+export default function Contato( { navigation } ) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContent}>
